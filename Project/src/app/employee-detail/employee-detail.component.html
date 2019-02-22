@@ -1,0 +1,28 @@
+<h2>Employee details</h2>
+<div>
+    <!-- <ul>
+        <li *ngFor="let emp of employeeArray">
+
+            {{emp.id}} {{emp.name}} {{emp.surname}} {{emp.department}} {{emp.position}} {{emp.pay}}
+        </li>
+    </ul> -->
+    <table >
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surame</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>Basic Pay</th>
+        </tr>
+        <tr *ngFor="let emp of employeeArray">
+            <td> {{emp.id}}</td>
+            <td> {{emp.name}}</td>
+            <td> {{emp.surname}}</td>
+            <td> {{emp.department}}</td>
+            <td> {{emp.position}}</td>
+            <td> {{emp.pay}}</td>
+      </tr>
+    </table>
+</div>
+<!-- <app-form (EmployeeAdded)= "EmployeeAdd($event)"></app-form> -->

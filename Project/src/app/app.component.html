@@ -1,0 +1,26 @@
+<div style="text-align:center">
+<div  style="text-align:center"> 
+ 
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"> Payroll</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a (click)="goToHome()"style="cursor: pointer">Home</a></li>
+      <li> <a (click)="goToEmployeeList()" style="cursor: pointer">Employee List</a></li> <!---->
+      <li> <a (click)="goToEmployeeDetail()" style="cursor: pointer" >Employee Details</a></li><!--routerLink="/employeeDetail"-->
+      <li> <a (click)="goToForm()" style="cursor: pointer" >Form</a></li><!--routerLink="/employeeDetail"-->
+
+    </ul>
+  </div>
+  </nav>
+</div>
+
+<div>
+ <router-outlet></router-outlet>
+
+</div>
+</div>
+
+
